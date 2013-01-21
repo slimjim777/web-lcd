@@ -14,9 +14,7 @@ lcd.begin(16,2)
 
 
 @app.route("/")
-@app.route("/<value>")
-def index(value=None):
-    print "Message is", value
+def index():
     return render_template('index.html', value=value)
 
 
@@ -42,3 +40,4 @@ if __name__ == "__main__":
     app.run('0.0.0.0')
 
 
+xlJhd82gs
