@@ -13,7 +13,7 @@ lcd.begin(16,2)
 
 @app.route("/")
 def index():
-    return render_template('index.html', value=value)
+    return render_template('index.html')
 
 
 @app.route("/change", methods=['POST'])
