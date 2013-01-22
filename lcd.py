@@ -4,8 +4,6 @@ from flask import Flask
 from flask import render_template, request
 from adafruit.Adafruit_CharLCD import Adafruit_CharLCD
 
-BASE_URL = ''
-
 app = Flask(__name__)
 
 # Initialise the LCD class
@@ -34,10 +32,6 @@ def change():
 
 
 if __name__ == "__main__":
-    lcd.clear()
-    lcd.message("h")
     app.debug = True
     app.run('0.0.0.0')
 
-
-xlJhd82gs
